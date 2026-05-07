@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Store API Products</title>
+   <link rel="stylesheet" href="new_style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Fake Store Products</h1>
+      <div class="filters">
+        <input type="text" id="search" placeholder="Search by title...">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="">All Categories</option>
+        </select>
+        <label for="sort">Sort:</label>
+        <select id="sort">
+          <option value="">Sort by Price</option>
+          <option value="asc">Low → High</option>
+          <option value="desc">High → Low</option>
+        </select>
+        <div class="cart-badge">Cart: <span id="cart-count">0</span></div>
+      </div>
+    </header>
+
+    <main id="product-grid">
+      <div id="loading">Loading...</div>
+    </main>
+  </div>
+
+  <!-- Product Details Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="NEW_TASK5.js"></script>
+</body>
+</html>
